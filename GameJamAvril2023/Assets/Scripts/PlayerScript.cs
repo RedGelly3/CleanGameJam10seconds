@@ -13,6 +13,7 @@ public class PlayerScript : MonoBehaviour
     private float walkingSpeed = 5.0f;
     [SerializeField]
     private float jumpPower = 3.50f;
+    private float aircontrol = 0.5f;
     private bool isGrounded;
 
     public GameObject nextTransformation;
@@ -34,7 +35,7 @@ public class PlayerScript : MonoBehaviour
         StartCoroutine(LaunchTime());
         currentTransformation = FindTransformationActuelle(gameObject);
         nextTransformation = null;
-
+        
     }
 
 
@@ -68,6 +69,10 @@ public class PlayerScript : MonoBehaviour
         animalBody.mass = nextTransformation.GetComponent<ValuesAnimal>().mass;
         jumpPower = nextTransformation.GetComponent<ValuesAnimal>().jumpForce;
         walkingSpeed = nextTransformation.GetComponent<ValuesAnimal>().speed;
+        aircontrol = nextTransformation.GetComponent<ValuesAnimal>().aircontrol;
+        gameObject.GetComponent<CapsuleCollider2D>().direction = nextTransformation.GetComponent<CapsuleCollider2D>().direction;
+        gameObject.GetComponent<CapsuleCollider2D>().size = nextTransformation.GetComponent<CapsuleCollider2D>().size * nextTransformation.GetComponent<Transform>().localScale.x;
+        gameObject.GetComponent<CapsuleCollider2D>().offset = nextTransformation.GetComponent<CapsuleCollider2D>().offset * nextTransformation.GetComponent<Transform>().localScale.y;
         currentTransformation = nextTransformation;
         nextTransformation = null;
         Logo.GetComponent<LogoTalisman>().nextTransformation = nextTransformation;
@@ -98,31 +103,11 @@ public class PlayerScript : MonoBehaviour
             }
             
         } while (GetObjectNameWithoutCareForClone(currentTransformation) == GetObjectNameWithoutCareForClone(newTransformation));
-        
-        /*
-        if (GetObjectNameWithoutCareForClone(newTransformation) == "Sanglier")
-        {
-            newTransformation.GetComponent<ComportementSanglier>().player = gameObject.transform;
-        }
-        else if (GetObjectNameWithoutCareForClone(newTransformation) == "Lapin")
-        {
-            newTransformation.GetComponent<ComportementLapin>().player = gameObject.transform;
-        }
-        else if (GetObjectNameWithoutCareForClone(newTransformation) == "Escargot")
-        {
-            //newTransformation.GetComponent<ComportementEscargot>().player = gameObject.transform;
-        }
-        else if (GetObjectNameWithoutCareForClone(newTransformation) == "Herisson")
-        {
-            //newTransformation.GetComponent<ComportementHerisson>().player = gameObject.transform;
-        }
-        */
         newTransformation.transform.tag = "Transformation";
         newTransformation.transform.position =new Vector3(-1000,-1000,-1000);
         Logo.GetComponent<LogoTalisman>().nextTransformation = newTransformation;
         Logo.GetComponent<LogoTalisman>().currentTransformation = currentTransformation;
         Logo.GetComponent<LogoTalisman>().updated = true;
-        //newTransformation.GetComponent<Rigidbody2D>().velocity += playerVelocity;
         return newTransformation;
 
     }
@@ -174,18 +159,26 @@ public class PlayerScript : MonoBehaviour
             }
             else
             {
-                animalBody.AddForce(Vector3.right * walkingSpeed);
+                animalBody.AddForce(Vector3.right * aircontrol);
+            }
+            if (!currentTransformation.GetComponent<SpriteRenderer>().flipX)
+            {
+                currentTransformation.GetComponent<SpriteRenderer>().flipX = true;
             }
         }
         if (Input.GetKey(KeyCode.A)) // Left key
         {
             if (isGrounded)
             {
-                player.transform.Translate(-Vector3.right * walkingSpeed * Time.deltaTime, Space.World);
+                player.transform.Translate(-Vector3.right * walkingSpeed* Time.deltaTime, Space.World);
             }
             else
             {
-                animalBody.AddForce(Vector3.right * walkingSpeed);
+                animalBody.AddForce(-Vector3.right * aircontrol);
+            }
+            if (currentTransformation.GetComponent<SpriteRenderer>().flipX)
+            {
+                currentTransformation.GetComponent<SpriteRenderer>().flipX = false;
             }
         }
     }

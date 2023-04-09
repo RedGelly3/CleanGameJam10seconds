@@ -7,5 +7,5 @@ public class ValuesAnimal : MonoBehaviour
     public float jumpForce;
     public float mass;
     public float speed;
-
+    public float aircontrol; 
 }
