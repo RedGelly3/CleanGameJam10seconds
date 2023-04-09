@@ -423,6 +423,8 @@ MonoBehaviour:
   transformations:
   - {fileID: 8964720159134037020, guid: 5421e9dcf3610eb41976dc5a0d3ecc62, type: 3}
   - {fileID: 3642965577735521172, guid: 5623cc7cf76e1794a98efa9a1c3969bf, type: 3}
+  - {fileID: 3642965577735521172, guid: 5b624e05f1d0c18448b39d4ca6805dfc, type: 3}
+  - {fileID: 8964720159134037020, guid: 77db3edd6828d1c4d8dc67bbde185843, type: 3}
   player: {fileID: 0}
   walkingSpeed: 5
   jumpPower: 3.5

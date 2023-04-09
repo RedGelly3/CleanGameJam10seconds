@@ -161,7 +161,8 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.D)) // Right key 
         {
             if (isGrounded)
-            {
+            {   
+                
                 player.transform.Translate(Vector3.right * walkingSpeed * Time.deltaTime, Space.World);
             }
             else
@@ -191,6 +192,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             StartCoroutine(currentTransformation.GetComponent<ValuesAnimal>().Pouvoir(currentTransformation));
+
         }
     }
     void OnTriggerStay2D(Collider2D other)
