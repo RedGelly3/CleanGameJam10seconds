@@ -104,6 +104,9 @@ MonoBehaviour:
   mass: 1.75
   speed: 5
   aircontrol: 0.2
+  forceDash: {x: 0, y: 0}
+  freshDash: 0
+  timeDash: 0
 --- !u!61 &3385392213629451900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,7 +139,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07}
+  m_Offset: {x: 0.010062277, y: -0.0664782}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -147,7 +150,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.1}
+  m_Size: {x: 0.3772403, y: 0.09295641}
   m_EdgeRadius: 0
 --- !u!70 &4656569520115754416
 CapsuleCollider2D:

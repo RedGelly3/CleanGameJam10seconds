@@ -13,6 +13,7 @@ public class EnnemiPaterne : MonoBehaviour
     void Start()
     {
         cible = balises[0];
+        gameObject.GetComponent<Transform>().position = cible.position;
     }
 
 
