@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5119241681304082343}
   - component: {fileID: 3029559991448700186}
   - component: {fileID: 6510201094939587457}
-  - component: {fileID: 754214205256790321}
+  - component: {fileID: 2639851388785472536}
   m_Layer: 0
-  m_Name: Sanglier
+  m_Name: Herisson
   m_TagString: Transformation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8964720159134037020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.26, y: -0.11, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -673822714, guid: 1e7428a522590994c81f50d2b807d71e, type: 3}
+  m_Sprite: {fileID: 843266891, guid: f7332fcb10c39b147b60072c9c414df5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   jumpForce: 1
   mass: 1.75
   speed: 1
---- !u!95 &754214205256790321
+--- !u!95 &2639851388785472536
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ Animator:
   m_GameObject: {fileID: 8964720159134037020}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f9ad7c15360b32846b83a568ffc4b774, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9bcce479bf6d82842a6605c7db994341, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

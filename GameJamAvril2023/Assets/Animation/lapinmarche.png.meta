@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b1635472deba323419983f546cc88c18
+guid: 84d4e6118751faa44a30a1b6ef44db06
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: solmoussu_0
+      name: lapinmarche_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
+        x: 19
+        y: 66
+        width: 27
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 831871dbd9d2d4f4090d0cb64d3c48c8
-      internalID: -303915511
+      spriteID: 0a15c4a3403f7974186e2ef8cfd1dd54
+      internalID: 917616429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_1
+      name: lapinmarche_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 83
+        y: 66
+        width: 28
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015418e3712d72745b8bc53bebc411d1
-      internalID: -2025321752
+      spriteID: 6c1de39f6541bb346989de21a4380b35
+      internalID: 1863321180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_2
+      name: lapinmarche_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
+        x: 19
+        y: 2
+        width: 30
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 029c3d0dc8a96e14ca355bd0211e1bb7
-      internalID: -996563134
+      spriteID: 2edbcd871c9914e43aa7cef748dda001
+      internalID: 1160915496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_3
+      name: lapinmarche_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 82
+        y: 2
+        width: 32
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,50 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67809e1291edf0e4287ebc4de8486aab
-      internalID: 809103211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: solmoussu_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b2764978a10bbd448c19d6af0270741
-      internalID: -1648865493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: solmoussu_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 021cc45fb46dc5447a356ba98c0bfa24
-      internalID: -1312718368
+      spriteID: 03092a0d99bda5842934b81db94cbbfb
+      internalID: 1669292288
       vertices: []
       indices: 
       edges: []
@@ -243,12 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      solmoussu_0: -303915511
-      solmoussu_1: -2025321752
-      solmoussu_2: -996563134
-      solmoussu_3: 809103211
-      solmoussu_4: -1648865493
-      solmoussu_5: -1312718368
+      lapinmarche_0: 917616429
+      lapinmarche_1: 1863321180
+      lapinmarche_2: 1160915496
+      lapinmarche_3: 1669292288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

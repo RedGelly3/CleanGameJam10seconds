@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b1635472deba323419983f546cc88c18
+guid: 35c2c1cfe7b4a964aaf1702ed54ffa80
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: solmoussu_0
+      name: "H\xE9riboule_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
+        x: 1
+        y: 128
+        width: 61
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 831871dbd9d2d4f4090d0cb64d3c48c8
-      internalID: -303915511
+      spriteID: 05787935bdb126d418ea4d22ae3ecee2
+      internalID: 1416540956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_1
+      name: "H\xE9riboule_1"
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 65
+        y: 128
+        width: 60
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015418e3712d72745b8bc53bebc411d1
-      internalID: -2025321752
+      spriteID: 0b07c05f57c4ba14fb7583014a4f7b49
+      internalID: 364598850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_2
+      name: "H\xE9riboule_2"
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
+        x: 1
+        y: 65
+        width: 53
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 029c3d0dc8a96e14ca355bd0211e1bb7
-      internalID: -996563134
+      spriteID: 9ea564975c1b0af4f990b4ed8bae0bab
+      internalID: -747953221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_3
+      name: "H\xE9riboule_3"
       rect:
         serializedVersion: 2
-        x: 0
+        x: 65
+        y: 68
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed42a57fa6a1454f9e5819dce3b760e
+      internalID: -1263850184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "H\xE9riboule_4"
+      rect:
+        serializedVersion: 2
+        x: 5
         y: 0
-        width: 16
-        height: 16
+        width: 47
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,50 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67809e1291edf0e4287ebc4de8486aab
-      internalID: 809103211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: solmoussu_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b2764978a10bbd448c19d6af0270741
-      internalID: -1648865493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: solmoussu_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 021cc45fb46dc5447a356ba98c0bfa24
-      internalID: -1312718368
+      spriteID: f8ea46ba10154c04eb4676935d185d2e
+      internalID: -480578367
       vertices: []
       indices: 
       edges: []
@@ -243,12 +222,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      solmoussu_0: -303915511
-      solmoussu_1: -2025321752
-      solmoussu_2: -996563134
-      solmoussu_3: 809103211
-      solmoussu_4: -1648865493
-      solmoussu_5: -1312718368
+      "H\xE9riboule_0": 1416540956
+      "H\xE9riboule_1": 364598850
+      "H\xE9riboule_2": -747953221
+      "H\xE9riboule_3": -1263850184
+      "H\xE9riboule_4": -480578367
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

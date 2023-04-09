@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b1635472deba323419983f546cc88c18
+guid: 98727479d0fc4a24ab28b9b018affcec
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: solmoussu_0
+      name: SanglierAnimMarche_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
+        x: 2
+        y: 74
+        width: 59
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 831871dbd9d2d4f4090d0cb64d3c48c8
-      internalID: -303915511
+      spriteID: 76cb826e6189ad148ad384972614c6f0
+      internalID: 843981711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_1
+      name: SanglierAnimMarche_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 66
+        y: 74
+        width: 59
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015418e3712d72745b8bc53bebc411d1
-      internalID: -2025321752
+      spriteID: 2693737a383e5c24eab7eed6a0499ccb
+      internalID: -1883154939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_2
+      name: SanglierAnimMarche_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
+        x: 3
+        y: 10
+        width: 59
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 029c3d0dc8a96e14ca355bd0211e1bb7
-      internalID: -996563134
+      spriteID: 4f29506c35806574ba6d2cf922d46880
+      internalID: -930940094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_3
+      name: SanglierAnimMarche_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 65
+        y: 10
+        width: 59
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,50 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67809e1291edf0e4287ebc4de8486aab
-      internalID: 809103211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: solmoussu_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b2764978a10bbd448c19d6af0270741
-      internalID: -1648865493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: solmoussu_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 021cc45fb46dc5447a356ba98c0bfa24
-      internalID: -1312718368
+      spriteID: 541acc846d2c67841b36df66dd2aaf8b
+      internalID: -1209074481
       vertices: []
       indices: 
       edges: []
@@ -243,12 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      solmoussu_0: -303915511
-      solmoussu_1: -2025321752
-      solmoussu_2: -996563134
-      solmoussu_3: 809103211
-      solmoussu_4: -1648865493
-      solmoussu_5: -1312718368
+      SanglierAnimMarche_0: 843981711
+      SanglierAnimMarche_1: -1883154939
+      SanglierAnimMarche_2: -930940094
+      SanglierAnimMarche_3: -1209074481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

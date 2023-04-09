@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b1635472deba323419983f546cc88c18
+guid: 95be63702ce65724e8fc0435772a2968
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: solmoussu_0
+      name: Escargot_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 36
+        width: 32
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 831871dbd9d2d4f4090d0cb64d3c48c8
-      internalID: -303915511
+      spriteID: 3b0c90332640a154eaea8138b20074e2
+      internalID: -1952624264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_1
+      name: Escargot_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 36
+        y: 36
+        width: 33
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,41 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015418e3712d72745b8bc53bebc411d1
-      internalID: -2025321752
+      spriteID: 89e97afb08896184884cae46e5479f7a
+      internalID: 562785102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 029c3d0dc8a96e14ca355bd0211e1bb7
-      internalID: -996563134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: solmoussu_3
+      name: Escargot_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 34
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67809e1291edf0e4287ebc4de8486aab
-      internalID: 809103211
+      spriteID: 3c49de5b3ddb9fa4aa0f11d9e75f5744
+      internalID: -2106160312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: solmoussu_4
+      name: Escargot_3
       rect:
         serializedVersion: 2
-        x: 16
+        x: 36
         y: 0
-        width: 16
-        height: 16
+        width: 33
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,29 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b2764978a10bbd448c19d6af0270741
-      internalID: -1648865493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: solmoussu_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 021cc45fb46dc5447a356ba98c0bfa24
-      internalID: -1312718368
+      spriteID: 7f4a8adfa75acf84c9943bba4bb76656
+      internalID: 1434842649
       vertices: []
       indices: 
       edges: []
@@ -243,12 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      solmoussu_0: -303915511
-      solmoussu_1: -2025321752
-      solmoussu_2: -996563134
-      solmoussu_3: 809103211
-      solmoussu_4: -1648865493
-      solmoussu_5: -1312718368
+      Escargot_0: -1952624264
+      Escargot_1: 562785102
+      Escargot_2: -2106160312
+      Escargot_3: 1434842649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
