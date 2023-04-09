@@ -100,9 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e209cc7b7859d441968005f3c832e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 3
-  mass: 0.9
-  speed: 3
+  jumpForce: 3.5
+  mass: 1
+  speed: 6
   aircontrol: 0.7
   forceDash: {x: 0, y: 0}
   freshDash: 0
