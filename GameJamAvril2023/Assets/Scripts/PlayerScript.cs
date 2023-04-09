@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
@@ -200,7 +201,8 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Death" || collision.gameObject.tag == "Ennemi")
         {
-            StartCoroutine(Death());
+            collision.gameObject.GetComponent<EnnemiPaterne>().enabled = false;
+            StartCoroutine(Death(collision));
         }
     }
     void OnTriggerStay2D(Collider2D other)
@@ -219,13 +221,19 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    private IEnumerator Death()
+    private IEnumerator Death(Collider2D coll)
     {
         currentTransformation.GetComponent<SpriteRenderer>().color = Color.gray;
         cam.GetComponent<FollowPlayer>().enabled = false;
+        gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
         time = 10.0f;
         yield return new WaitForSeconds(0.5f);
+        coll.gameObject.GetComponent<EnnemiPaterne>().enabled = true;
+        gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
         gameObject.GetComponent<Transform>().position = checkpoint.position;
         cam.GetComponent<FollowPlayer>().enabled = true;
+        currentTransformation.GetComponent<SpriteRenderer>().color = Color.white;
     }
 }
