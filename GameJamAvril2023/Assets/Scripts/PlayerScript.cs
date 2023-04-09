@@ -201,7 +201,11 @@ public class PlayerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Death" || collision.gameObject.tag == "Ennemi")
+        if (collision.gameObject.tag == "Death")
+        {   
+            StartCoroutine(Death(null));
+        }
+        if (collision.gameObject.tag == "Ennemi")
         {
             collision.gameObject.GetComponent<EnnemiPaterne>().enabled = false;
             StartCoroutine(Death(collision));
@@ -231,7 +235,10 @@ public class PlayerScript : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         time = 10.0f;
         yield return new WaitForSeconds(0.5f);
-        coll.gameObject.GetComponent<EnnemiPaterne>().enabled = true;
+        if (coll != null)
+        {
+            coll.gameObject.GetComponent<EnnemiPaterne>().enabled = true;
+        }
         gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
         gameObject.GetComponent<Transform>().position = checkpoint.position;
