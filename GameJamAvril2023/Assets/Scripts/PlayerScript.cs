@@ -6,8 +6,9 @@ public class PlayerScript : MonoBehaviour
 {
     public double time;
     public List<GameObject> transformations;
-
+    public Transform checkpoint;
     public Transform player;
+    public Camera cam;
     private Rigidbody2D animalBody;
     [SerializeField]
     private float walkingSpeed = 5.0f;
@@ -66,6 +67,7 @@ public class PlayerScript : MonoBehaviour
         Destroy(currentTransformation);
         nextTransformation.transform.parent = gameObject.transform;
         nextTransformation.transform.localPosition = Vector3.zero;
+        animalBody.gravityScale = 1; 
         animalBody.mass = nextTransformation.GetComponent<ValuesAnimal>().mass;
         jumpPower = nextTransformation.GetComponent<ValuesAnimal>().jumpForce;
         walkingSpeed = nextTransformation.GetComponent<ValuesAnimal>().speed;
@@ -193,6 +195,14 @@ public class PlayerScript : MonoBehaviour
             StartCoroutine(currentTransformation.GetComponent<ValuesAnimal>().Pouvoir(currentTransformation));
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Death" || collision.gameObject.tag == "Ennemi")
+        {
+            StartCoroutine(Death());
+        }
+    }
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Ground")
@@ -207,5 +217,15 @@ public class PlayerScript : MonoBehaviour
         {
             isGrounded = false;
         }
+    }
+
+    private IEnumerator Death()
+    {
+        currentTransformation.GetComponent<SpriteRenderer>().color = Color.gray;
+        cam.GetComponent<FollowPlayer>().enabled = false;
+        time = 10.0f;
+        yield return new WaitForSeconds(0.5f);
+        gameObject.GetComponent<Transform>().position = checkpoint.position;
+        cam.GetComponent<FollowPlayer>().enabled = true;
     }
 }
