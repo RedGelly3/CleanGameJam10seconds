@@ -188,13 +188,16 @@ public class PlayerScript : MonoBehaviour
                 currentTransformation.GetComponent<SpriteRenderer>().flipX = true;
             }
         }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            StartCoroutine(currentTransformation.GetComponent<ValuesAnimal>().Pouvoir(currentTransformation));
+        }
     }
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Ground")
         {
             isGrounded = true;
-            Debug.Log("On ground");
         }
     }
 
@@ -203,7 +206,6 @@ public class PlayerScript : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             isGrounded = false;
-            Debug.Log("ExitGround");
         }
     }
 }

@@ -48164,6 +48164,14 @@ PrefabInstance:
       propertyPath: aircontrol
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 6653144947170282697, guid: 5623cc7cf76e1794a98efa9a1c3969bf, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6653144947170282697, guid: 5623cc7cf76e1794a98efa9a1c3969bf, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8845970048097243514, guid: 5623cc7cf76e1794a98efa9a1c3969bf, type: 3}
       propertyPath: m_RootOrder
       value: 1
