@@ -181,7 +181,7 @@ public class PlayerScript : MonoBehaviour
         {
             if (isGrounded)
             {
-                player.transform.Translate(-Vector3.right * walkingSpeed* Time.deltaTime, Space.World);
+                player.transform.Translate(-Vector3.right * walkingSpeed * Time.deltaTime, Space.World);
             }
             else
             {
@@ -192,10 +192,34 @@ public class PlayerScript : MonoBehaviour
                 currentTransformation.GetComponent<SpriteRenderer>().flipX = true;
             }
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(currentTransformation.GetComponent<ValuesAnimal>().Pouvoir(currentTransformation));
 
+        }
+        if ((currentTransformation.name == "Lapin") || (currentTransformation.name == "Lapin(Clone)"))
+        {
+            if (((Input.GetKey(KeyCode.D)) || ((Input.GetKey(KeyCode.A)))) && isGrounded)
+            {
+                currentTransformation.GetComponent<Animator>().SetBool("lapinMarche", true);
+            }
+            else
+            {
+                currentTransformation.GetComponent<Animator>().SetBool("lapinMarche", false);
+            }
+
+            
+        }
+        if (currentTransformation.name == "Sanglier(Clone)")
+        {
+            if (((Input.GetKey(KeyCode.D)) || ((Input.GetKey(KeyCode.A)))) && isGrounded)
+            {
+                currentTransformation.GetComponent<Animator>().SetBool("sanglierMarche", true);
+            }
+            else
+            {
+                currentTransformation.GetComponent<Animator>().SetBool("sanglierMarche", false);
+            }
         }
     }
 
