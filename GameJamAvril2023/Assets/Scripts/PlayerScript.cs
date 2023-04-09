@@ -91,16 +91,23 @@ public class PlayerScript : MonoBehaviour
             Destroy(newTransformation);
             double dice = Random.Range(0f, 100f);
             // set new prefab et lui donner la transform player
-            if (dice > 50)
+            if (dice <= 1)
             {
-
+                newTransformation = Instantiate(transformations[3], gameObject.transform.position, Quaternion.identity);
+            }
+            else if (dice <= 34)
+            {
                 newTransformation = Instantiate(transformations[0], gameObject.transform.position, Quaternion.identity);
-
+            }
+            else if (dice <= 77)
+            {
+                newTransformation = Instantiate(transformations[2], gameObject.transform.position, Quaternion.identity);
             }
             else
             {
                 newTransformation = Instantiate(transformations[1], gameObject.transform.position, Quaternion.identity);
             }
+
             
         } while (GetObjectNameWithoutCareForClone(currentTransformation) == GetObjectNameWithoutCareForClone(newTransformation));
         newTransformation.transform.tag = "Transformation";
@@ -161,9 +168,9 @@ public class PlayerScript : MonoBehaviour
             {
                 animalBody.AddForce(Vector3.right * aircontrol);
             }
-            if (!currentTransformation.GetComponent<SpriteRenderer>().flipX)
+            if (currentTransformation.GetComponent<SpriteRenderer>().flipX)
             {
-                currentTransformation.GetComponent<SpriteRenderer>().flipX = true;
+                currentTransformation.GetComponent<SpriteRenderer>().flipX = false;
             }
         }
         if (Input.GetKey(KeyCode.A)) // Left key
@@ -176,9 +183,9 @@ public class PlayerScript : MonoBehaviour
             {
                 animalBody.AddForce(-Vector3.right * aircontrol);
             }
-            if (currentTransformation.GetComponent<SpriteRenderer>().flipX)
+            if (!currentTransformation.GetComponent<SpriteRenderer>().flipX)
             {
-                currentTransformation.GetComponent<SpriteRenderer>().flipX = false;
+                currentTransformation.GetComponent<SpriteRenderer>().flipX = true;
             }
         }
     }
