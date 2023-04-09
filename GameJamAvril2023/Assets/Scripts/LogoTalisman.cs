@@ -25,7 +25,6 @@ public class LogoTalisman : MonoBehaviour
     {   
         if (updated)
         {
-            //print("logo update");
             if (currentTransformation is not null && nextTransformation is not null)
             {
                 StopAllCoroutines();
@@ -88,7 +87,6 @@ public class LogoTalisman : MonoBehaviour
                 {
                     tempSprite = sprites[0];
                 }
-                print(lastForm);
 
             } while (/*"Logo" +currentForm == tempSprite.name ||*/tempSprite.name == lastForm );
             sprite.sprite = tempSprite;

@@ -161,9 +161,9 @@ public class PlayerScript : MonoBehaviour
             {
                 animalBody.AddForce(Vector3.right * aircontrol);
             }
-            if (!currentTransformation.GetComponent<SpriteRenderer>().flipX)
+            if (currentTransformation.GetComponent<SpriteRenderer>().flipX)
             {
-                currentTransformation.GetComponent<SpriteRenderer>().flipX = true;
+                currentTransformation.GetComponent<SpriteRenderer>().flipX = false;
             }
         }
         if (Input.GetKey(KeyCode.A)) // Left key
@@ -176,10 +176,14 @@ public class PlayerScript : MonoBehaviour
             {
                 animalBody.AddForce(-Vector3.right * aircontrol);
             }
-            if (currentTransformation.GetComponent<SpriteRenderer>().flipX)
+            if (!currentTransformation.GetComponent<SpriteRenderer>().flipX)
             {
-                currentTransformation.GetComponent<SpriteRenderer>().flipX = false;
+                currentTransformation.GetComponent<SpriteRenderer>().flipX = true;
             }
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            StartCoroutine(currentTransformation.GetComponent<ValuesAnimal>().Pouvoir(currentTransformation));
         }
     }
     void OnTriggerStay2D(Collider2D other)
@@ -187,7 +191,6 @@ public class PlayerScript : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             isGrounded = true;
-            Debug.Log("On ground");
         }
     }
 
@@ -196,7 +199,6 @@ public class PlayerScript : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             isGrounded = false;
-            Debug.Log("ExitGround");
         }
     }
 }
