@@ -26,7 +26,23 @@ public class ValuesAnimal : MonoBehaviour
 
     public IEnumerator Pouvoir(GameObject transformation)
     {
-        if(transformation.name == "Sanglier(Clone)" && b_dash)
+        ParticleSystem powerEffect;
+        if (transformation.TryGetComponent<ParticleSystem>(component: out powerEffect))
+        {
+            if (!transformation.GetComponent<SpriteRenderer>().flipX)
+            {
+                //Debug.Log("flip particle ");
+                powerEffect.shape.rotation.Set(0,0,-90);
+                transformation.GetComponent<ParticleSystemRenderer>().flip = new Vector3(50, 0, -90);
+
+            }
+            else
+            {
+                transformation.GetComponent<ParticleSystemRenderer>().flip = new Vector3(0, 0, 90);
+            } 
+                powerEffect.Play();
+        }
+        if (transformation.name == "Sanglier(Clone)" && b_dash)
         {
             if(!transformation.GetComponent<SpriteRenderer>().flipX){
                 sens = 1;
