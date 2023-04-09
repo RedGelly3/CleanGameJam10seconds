@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Transformation
   - Ground
+  - Death
   layers:
   - Default
   - TransparentFX
