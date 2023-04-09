@@ -17,6 +17,7 @@ public class ValuesAnimal : MonoBehaviour
     private int sens = 1;
     public float timeDash; 
     private bool b_dash = true;
+    private bool boule_herisson = false; 
 
     private void Awake()
     {
@@ -43,7 +44,6 @@ public class ValuesAnimal : MonoBehaviour
         }
         if (transformation.name == "Sanglier(Clone)" && b_dash)
         {
-            Debug.Log("Dash");
             if(!transformation.GetComponent<SpriteRenderer>().flipX){
                 sens = 1;
             }
@@ -60,6 +60,19 @@ public class ValuesAnimal : MonoBehaviour
             GameObject.Find("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             GameObject.Find("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             StartCoroutine(freezeDash());
+        }
+        if(transformation.name == "Herisson(Clone)")
+        {
+            if (!boule_herisson)
+            {
+                boule_herisson = true;
+                GameObject.Find("Player").GetComponent<Rigidbody2D>().gravityScale = 3; 
+            }
+            else
+            {
+                boule_herisson = false;
+                GameObject.Find("Player").GetComponent<Rigidbody2D>().gravityScale = 1; 
+            }
         }
     }
     private IEnumerator freezeDash()
